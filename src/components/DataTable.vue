@@ -90,7 +90,7 @@ export default {
   },
 
   created () {
-    axios.get(`http://www.filltext.com/?rows=1000&id=${number|1000}&firstName=${firstName}&delay=3&lastName=${lastName}&email=${email}&phone={phone|(xxx)xxx-xx-xx}}`)
+    axios.get('http://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=3&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}}')
         .then(response => {
         this.users = response.data
       })
